@@ -6,6 +6,7 @@
   src: url("fonts/Inter-Thin-BETA.woff2?v=3.11") format("woff2"),
        url("fonts/Inter-Thin-BETA.woff?v=3.11") format("woff");
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
@@ -23,6 +24,7 @@
   src: url("fonts/Inter-ExtraLight-BETA.woff2?v=3.11") format("woff2"),
        url("fonts/Inter-ExtraLight-BETA.woff?v=3.11") format("woff");
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
@@ -40,6 +42,7 @@
   src: url("fonts/Inter-Light-BETA.woff2?v=3.11") format("woff2"),
        url("fonts/Inter-Light-BETA.woff?v=3.11") format("woff");
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
@@ -57,6 +60,7 @@
   src: url("fonts/Inter-Regular.woff2?v=3.11") format("woff2"),
        url("fonts/Inter-Regular.woff?v=3.11") format("woff");
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
@@ -74,6 +78,7 @@
   src: url("fonts/Inter-Medium.woff2?v=3.11") format("woff2"),
        url("fonts/Inter-Medium.woff?v=3.11") format("woff");
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
@@ -91,6 +96,7 @@
   src: url("fonts/Inter-SemiBold.woff2?v=3.11") format("woff2"),
        url("fonts/Inter-SemiBold.woff?v=3.11") format("woff");
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
@@ -108,6 +114,7 @@
   src: url("fonts/Inter-Bold.woff2?v=3.11") format("woff2"),
        url("fonts/Inter-Bold.woff?v=3.11") format("woff");
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
@@ -142,6 +149,7 @@
   src: url("fonts/Inter-Black.woff2?v=3.11") format("woff2"),
        url("fonts/Inter-Black.woff?v=3.11") format("woff");
 }
+
 @font-face {
   font-family: 'Inter';
   font-style:  italic;
@@ -151,6 +159,12 @@
        url("fonts/Inter-BlackItalic.woff?v=3.11") format("woff");
 }
 
+@font-face {
+    font-family: 'PPro';
+    font-style: normal;
+    src: url("fonts/Pragmata Pro Mono Regular.woff2") format("woff2"),
+	 url("fonts/Pragmata Pro Mono Regular.woff") format("woff");
+     }
 
 body, html {
     height: 100%;
@@ -233,13 +247,14 @@ img.hexagon:hover {
 }
 
 p.intro { 
+    font-family: PPro;
     font-size: 1.4em;
     color: #fff;
     float: left;
     display: inline;
     animation-duration: 1.5s;
     animation-delay: 0s;
-    padding-left: 45px;
+    padding-left: 50px;
     margin-top: 0px;
 }
 
