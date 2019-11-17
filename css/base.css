@@ -247,14 +247,14 @@ p.intro {
 p.description { 
     font-family: Inter;
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #999;
     float: left;
     display: inline;
     animation-duration: 1.0s;
     animation-delay: 3.0s;
     padding-left: 40px;
-    margin-right: -150px;
+    margin-right: -170px;
     margin-top: -28px;
 }
 
