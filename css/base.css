@@ -181,9 +181,8 @@ h1.name {
     font-weight: 800;
     font-size: 3.5em;
     animation-delay: 1.0s;
-    padding-left: 10px;
+    margin-left: 20px;
     margin-top: -12px;
-    margin-right: -100px;
 }
 
 .center {
@@ -237,7 +236,7 @@ img.hexagon {
     -webkit-filter: grayscale(1);
     filter: grayscale(1) contrast(1);
 
-    margin-left: -100px;
+    margin-left: -80px;
 
 }
 
@@ -254,7 +253,7 @@ p.intro {
     display: inline;
     animation-duration: 1.5s;
     animation-delay: 0s;
-    padding-left: 50px;
+    padding-left: 35px;
     margin-top: 0px;
 }
 
@@ -268,7 +267,7 @@ p.description {
     display: inline;
     animation-duration: 1.0s;
     animation-delay: 3.0s;
-    padding-left: 40px;
+    padding-left: 30px;
     margin-right: -170px;
     margin-top: -28px;
 }
