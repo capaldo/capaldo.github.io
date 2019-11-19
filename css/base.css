@@ -290,7 +290,7 @@ p.description {
     animation-delay: 3.5s;
     animation-duration: 0.3s;
     fill: red;
-    width: 50px;
+    width: 40px;
 }
 
 .github:hover {
@@ -302,7 +302,7 @@ p.description {
     animation-delay: 3.7s;
     animation-duration: 0.3s;
     fill: blue;
-    width: 50px;
+    width: 40px;
 }
 
 .email {
@@ -310,7 +310,7 @@ p.description {
     animation-delay: 3.9s;
     animation-duration: 0.3s;
     fill: green;
-    width: 50px;
+    width: 40px;
 }
 
 .linkedin:hover {
