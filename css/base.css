@@ -250,19 +250,6 @@ p.shortbio {
     animation-delay: 2.0s;
 }
 
-.footer {
-    color: var(--footer-color);
-    font-family: PPro;
-    font-style: normal;
-    width: 480px;
-    text-align: left;
-    animation-delay: 2.5s;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
 
 .icons {
     position: absolute; 
@@ -332,6 +319,22 @@ p.shortbio {
 
 .fa-keybase:hover {
     opacity: 100%;
+}
+
+.footer {
+    color: var(--footer-color);
+    font-family: PPro;
+    font-style: normal;
+    width: 480px;
+    text-align: left;
+    animation-delay: 2.5s;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    animation-delay: 3.5s;
 }
 
 @media only screen and (min-width: 1024px) {
