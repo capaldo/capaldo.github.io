@@ -1,3 +1,16 @@
+:root {
+    --bg-color: #1C1C1E;
+    --intro-color: #636366;
+    --name-color: #FFFFFF;
+    --motto-color: #636366;
+    --shortbio-color: #8E8E93;
+    --footer-color: #48484A;
+    --red: #FF453A;
+    --yellow: #FFD60A;
+    --green: #30D158;
+    --blue: #0A84FF;
+}
+
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
@@ -164,161 +177,212 @@
     font-style: normal;
     src: url("fonts/Pragmata Pro Mono Regular.woff2") format("woff2"),
 	 url("fonts/Pragmata Pro Mono Regular.woff") format("woff");
-     }
-
-body, html {
-    height: 100%;
-    background-color: #111;
 }
 
+@font-face {
+    font-family: 'SFPro';
+    font-style: normal;
+    src: url("fonts/SF-Pro-Text-Medium.woff2") format("woff2"),
+	 url("fonts/SF-Pro-Text-Medium.woff") format("woff");
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+body {
+    background: var(--bg-color);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeText {
+    position: relative;
+    overflow: hidden;
+    margin-top: 28%;
+}
+
+p.intro {
+    color: var(--intro-color);
+    font-family: PPro;
+    font-style: normal;
+    font-size: 15px;
+    position: absolute;
+    text-align: left;
+    animation-delay: 0s;
+}
 
 h1.name {
-    display: inline;
-    float: right;
-    color: #d3d3d3;
+    color: var(--name-color);
     font-family: Inter;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 3.5em;
+    font-weight: 900;
+    font-size: 40px;
+    position: absolute;
+    text-align: left;
     animation-delay: 1.0s;
 }
 
-.center {
-    position: fixed;
-    top: 20%; /* or whatever top you need */
-    left: 50%;
-    width: auto;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-
-.parallax {
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} 
-
-.noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, supported by Chrome, Opera and Firefox */
-}
-
-img.hexagon {
-    float: left;
-    display: inline;
-    transition: filter 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-
-    animation-duration: 2.0s;
-    animation-delay: 2.0s;
-    width: auto;
-    height: auto;
-    max-height: 150px;
-
-    overflow: hidden;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1) contrast(1);
-
-    margin-left: -30px;
-
-}
-
-img.hexagon:hover {
-    all: 1s ease-in-out 0.5s, color 1s;
-    filter: grayscale(0);
-}
-
-p.intro { 
-    font-family: PPro;
-    font-size: 1.4em;
-    color: #fff;
-    float: left;
-    display: inline;
-    animation-duration: 1.5s;
-    animation-delay: 0s;
-
-    margin-left: 10px;
-    margin-top: 0px;
-}
-
-
-p.description { 
+p.motto {
+    color: var(--motto-color);
     font-family: Inter;
     font-weight: 500;
-    font-size: 1.8em;
-    color: #999;
-    float: right;
-    animation-duration: 1.0s;
-    animation-delay: 3.0s;
-
-    margin-top: -25px;
+    font-size: 20px;
+    position: absolute;
+    text-align: left;
+    animation-delay: 1.5s;
 }
 
-.buttons {
-    position: relative;
-    margin-bottom: 30%;
-    width: 100%;
-    margin-top: 40%;
-    margin-left: 30%;
+p.shortbio {
+    color: var(--shortbio-color);
+    font-family: Inter;
+    font-style: normal;
+    font-size: 20px;
+    position: absolute;
+    text-align: justify;
+    animation-delay: 2.2s;
 }
 
-.padding {
-    padding-right: 60px;
-    display: inline;
-}
-
-.github {
-    transition: fill 0.3s ease-in-out 0.1s;
-    animation-delay: 3.5s;
-    animation-duration: 0.3s;
-    fill: red;
-    width: 40px;
-}
-
-.github:hover {
-
-}
-
-.linkedin {
-    transition: fill 0.3s ease-in-out 0.1s;
-    animation-delay: 3.7s;
-    animation-duration: 0.3s;
-    fill: blue;
-    width: 40px;
-}
-
-.email {
-    transition: fill 0.3s ease-in-out 0.1s;
-    animation-delay: 3.9s;
-    animation-duration: 0.3s;
-    fill: green;
-    width: 40px;
-}
-
-.linkedin:hover {
-
-}
-
-footer {
+.footer {
+    color: var(--footer-color);
+    font-family: PPro;
+    font-style: normal;
+    width: 480px;
+    text-align: left;
+    animation-delay: 2.5s;
+    display: flex;
     text-align: center;
-    font: PPro;
-    font-size: 15px;
-    color: white;
-    padding-top: 2em;
-    animation-delay: 4.5s;
-    animation-duration: 2s;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
+
+.icons {
+    position: absolute; 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fab, .far, .fas {
+    font-size: 30px;
+}
+
+
+.github, .keybase {
+    animation-delay: 2.8s;
+    animation-duration: 1s;
+}
+
+.resume, .email {
+    animation-delay: 3.2s;
+    animation-duration: 1s;
+}
+
+.fa-github {
+    color: var(--red);
+    opacity: 85%;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fa-github:hover {
+    opacity: 100%;
+}
+
+.fa-file {
+    color: var(--yellow);
+    opacity: 85%;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fa-file:hover {
+    opacity: 100%;
+}
+
+
+.fa-envelope {
+    color: var(--green);
+    opacity: 85%;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fa-envelope:hover {
+    opacity: 100%;
+}
+
+.fa-keybase {
+    color: var(--blue);
+    opacity: 85%;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fa-keybase:hover {
+    opacity: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .homeText {
+	margin-bottom: 300px;
+	width: 490px;
+	height: 330px;
+    }
+
+    p.intro {
+	font-size: 20px;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 263px;
+	margin-bottom: 204px;
+    }
+
+    h1.name {
+	font-size: 50px;
+	margin-top: 23px;
+	margin-left: 5px;
+	margin-bottom: 140px;
+    }
+
+    p.motto {
+	font-size: 22px;
+	margin-top: 87px;
+	margin-left: 5px;
+	margin-bottom: 108px;
+    }
+
+    p.shortbio {
+	font-size: 16px;
+	margin-top: 167px;
+	margin-right: 5px;
+	margin-left: 5px;
+    }
+
+    .footer {
+	font-size: 12px;
+    }
+    
+    .icons {
+	margin-top: 294px;
+	width: 490px;
+    }
+
+    .fab, .far, .fas {
+	font-size: 30px;
+    }
+
+}
+
