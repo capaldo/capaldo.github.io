@@ -227,7 +227,7 @@ h1.name {
     font-size: 40px;
     position: absolute;
     text-align: left;
-    animation-delay: 1.0s;
+    animation-delay: 0.8s;
 }
 
 p.motto {
@@ -237,7 +237,7 @@ p.motto {
     font-size: 20px;
     position: absolute;
     text-align: left;
-    animation-delay: 1.5s;
+    animation-delay: 1.3s;
 }
 
 p.shortbio {
@@ -247,7 +247,7 @@ p.shortbio {
     font-size: 20px;
     position: absolute;
     text-align: justify;
-    animation-delay: 2.2s;
+    animation-delay: 2.0s;
 }
 
 .footer {
@@ -277,12 +277,12 @@ p.shortbio {
 
 .github, .keybase {
     animation-delay: 2.8s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 .resume, .email {
     animation-delay: 3.2s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 .fa-github {
