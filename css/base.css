@@ -181,7 +181,6 @@ h1.name {
     font-weight: 800;
     font-size: 3.5em;
     animation-delay: 1.0s;
-    margin-left: 20px;
     margin-right: -20px;
     margin-top: -12px;
 }
@@ -269,7 +268,7 @@ p.description {
     animation-duration: 1.0s;
     animation-delay: 3.0s;
     margin-top: -25px;
-    margin-right:  -60px;
+    margin-right:  -30px;
 }
 
 .buttons {
