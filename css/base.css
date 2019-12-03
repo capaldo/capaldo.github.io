@@ -193,7 +193,7 @@
 body {
     background: var(--bg-color);
     display: grid;
-    height: 90vh;
+    height: 100vh;
     margin: 0;
     place-items: center center;
 }
