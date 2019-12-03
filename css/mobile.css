@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+  body {
+       position: fixed;
+       overflow: hidden;
+  }
+  
+  .homeText { 
+      width: 90vw;
+  }
+
+}
