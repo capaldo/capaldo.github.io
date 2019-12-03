@@ -2,5 +2,26 @@
     .homeText {
 	width: 50%;
     }
+    
+    p.intro {
+	font-size: 25px;
+    }
+
+    h1.name {
+	font-size: 60px;
+    }
+
+    p.motto { 
+	font-size: 30px;
+    }
+
+    p.shortbio {
+	font-size: 25px;
+    }
+
+    .fab, .far, .fas {
+	font-size: 40px;
+    }
+
 }
 
