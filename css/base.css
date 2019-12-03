@@ -196,10 +196,11 @@ body {
     height: 90vh;
     margin: 0;
     place-items: center center;
+      overflow: hidden;
 }
 
 .homeText {
-    width: 70vw;
+    width: 100vw;
     margin: 0 auto;
 }
 
@@ -306,6 +307,7 @@ p.shortbio {
 }
 
 .footer {
+    height: 9vh;
     align-items: center bottom;
     width: 100%;
     color: var(--footer-color);
