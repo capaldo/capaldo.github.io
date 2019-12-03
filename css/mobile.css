@@ -6,7 +6,23 @@
   }
   
   .homeText { 
-      width: 90vw;
+      width: 95vw;
+  }
+
+  p.intro {
+      font-size: 15px;
+  }
+
+  h1.name {
+      font-size: 35px;
+  }
+
+  p.motto {
+      font-size: 25px;
+  }
+
+  p.shortbio {
+      font-size: 20px;
   }
 
 }
