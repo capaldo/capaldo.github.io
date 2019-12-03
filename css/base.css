@@ -310,7 +310,7 @@ p.shortbio {
 .footer {
     height: 9vh;
     align-items: center bottom;
-    width: 100%;
+    width: 80%;
     color: var(--footer-color);
     font-family: PPro;
     font-style: normal;
