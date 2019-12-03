@@ -193,9 +193,7 @@
 body {
     background: var(--bg-color);
     display: grid;
-    height: 70vh;
-    position: fixed;
-    overflow: hidden;
+    height: 90vh;
     margin: 0;
     place-items: center center;
 }
@@ -308,9 +306,8 @@ p.shortbio {
 }
 
 .footer {
-    height: 9vh;
     align-items: center bottom;
-    width: 80%;
+    width: 100%;
     color: var(--footer-color);
     font-family: PPro;
     font-style: normal;
