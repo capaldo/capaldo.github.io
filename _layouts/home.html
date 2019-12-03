@@ -1,65 +1,45 @@
 <!doctype html>
 <html>
 
-    
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="https://kit.fontawesome.com/77171bb218.js" crossorigin="anonymous"></script>
-    <title>{{ page.title }} | {{ site.first_name }} {{site.last_name}}</title>
-  </head>
 
-  <body>
+    <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/animate.css">
 
-      <div class = "noselect">
-	
-	  <div class ="homeText">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/wenk.css">
+	<script src="https://kit.fontawesome.com/77171bb218.js" crossorigin="anonymous"></script>
+	<title>{{ page.title }} | {{ site.first_name }} {{site.last_name}}</title>
+    </head>
 
-	      <p class="intro animated fadeIn">	
+    <body>
+
+	<div class = "noselect">
+
+	    <div class="homeText">
+
+		<p class="intro animated fadeIn">	
 		Hi, my name is
-	      </p>
-	  <h1 class="name animated fadeInUp">	      
-	      {{ site.first_name }} {{ site.last_name }}
-	  </h1>
-	  <p class="motto animated fadeIn">
-	    I like integrating medicine &amp; programming
-	  </p>
-	  <p class="shortbio animated fadeIn">
-	    I'm a post-baccalaureate and medical school applicant based in Miami, FL that designs and builds tools for the healthcare space in my spare time.
-	  </p>
+		</p>
+		<h1 class="name animated fadeInUp">	      
+		    {{ site.first_name }} {{ site.last_name }}
+		</h1>
+		<p class="motto animated fadeIn">
+		I like integrating medicine &amp; programming
+		</p>
+		<p class="shortbio animated fadeIn">
+		I'm a post-baccalaureate and medical school applicant based in Miami, FL that designs and builds tools for the healthcare space in my spare time.
+		</p>
 
-	    <div class="icons">
-		<a href="https://github.com/capaldo" class="hvr-float" target="_blank"><div class="github animated fadeInUp"><i class="fab fa-github"></i></div></a>
-		<a href="mailto:alex@capaldo.io" class="hvr-float"><div class="email animated fadeInUp"><i class="fas fa-envelope"></i></div></a>
-		<a href="https://keybase.io/capaldo" class="hvr-float" target="_blank"><div class="keybase animated fadeInUp"><i class="fab fa-keybase"></i></div></a>
+		<div class="icons">
+		    <span data-wenk="Github" data-wenk-pos="bottom" data-wenk-length="small" class="wenk-align--center"><a href="https://github.com/capaldo" class="hvr-float" target="_blank"><div class="github animated fadeInUp"><i class="fab fa-github"></i></div></a></span>
+		    <span data-wenk="Email" data-wenk-pos="bottom" data-wenk-length="small" class="wenk-align--center"><a href="mailto:alex@capaldo.io" class="hvr-float"><div class="email animated fadeInUp"><i class="fas fa-envelope"></i></div></a></span>
+		     <span data-wenk="Keybase" data-wenk-pos="bottom" data-wenk-length="small" class="wenk-align--center"><a href="https://keybase.io/capaldo" class="hvr-float" target="_blank"><div class="keybase animated fadeInUp"><i class="fab fa-keybase"></i></div></a></span>
+		</div>
+
 	    </div>
-
 	</div>
-	  
-
-
-
-
-
-	<div class="footer animated fadeIn">
-	       Excuse the bugs. The website is currently under construction.
-	    <br>
-	       Last Updated: {{ site.time | date: '%m.%d.%y' }}
-	  </div>
-
-
-
-      </div>
-
-
-
-  </body>
-
-
-
 
 
 
