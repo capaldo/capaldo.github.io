@@ -194,9 +194,10 @@ body {
     background: var(--bg-color);
     display: grid;
     height: 70vh;
+    position: fixed;
+    overflow: hidden;
     margin: 0;
     place-items: center center;
-    overflow: hidden;
 }
 
 .homeText {
