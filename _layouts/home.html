@@ -1,14 +1,15 @@
 <!doctype html>
 <html>
-
-
     <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+
 	<link rel="stylesheet" href="css/hover.css">
 	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/wenk.css">
+
+	<link rel="stylesheet" href="css/desktop.css">
+
 	<script src="https://kit.fontawesome.com/77171bb218.js" crossorigin="anonymous"></script>
 	<title>{{ page.title }} | {{ site.first_name }} {{site.last_name}}</title>
     </head>
@@ -34,19 +35,19 @@
 
 		<div class="icons">
 		    <span data-wenk="Github" data-wenk-pos="bottom" data-wenk-length="small" class="wenk-align--center"><a href="https://github.com/capaldo" class="hvr-float" target="_blank"><div class="github animated fadeInUp"><i class="fab fa-github"></i></div></a></span>
+		    <span data-wenk="Resume" data-wenk-pos="bottom" data-wenk-length="small" class="wenk-align--center"><a href="misc/resume.pdf" class="hvr-float" target="_blank"><div class="resume animated fadeInUp"><i class="fas fa-scroll"></i></div></a></span>
 		    <span data-wenk="Email" data-wenk-pos="bottom" data-wenk-length="small" class="wenk-align--center"><a href="mailto:alex@capaldo.io" class="hvr-float"><div class="email animated fadeInUp"><i class="fas fa-envelope"></i></div></a></span>
-		     <span data-wenk="Keybase" data-wenk-pos="bottom" data-wenk-length="small" class="wenk-align--center"><a href="https://keybase.io/capaldo" class="hvr-float" target="_blank"><div class="keybase animated fadeInUp"><i class="fab fa-keybase"></i></div></a></span>
+		    <span data-wenk="Keybase" data-wenk-pos="bottom" data-wenk-length="small" class="wenk-align--center"><a href="https://keybase.io/capaldo" class="hvr-float" target="_blank"><div class="keybase animated fadeInUp"><i class="fab fa-keybase"></i></div></a></span>
 		</div>
 
 	    </div>
 	</div>
 
-
-	    <div class="footer animated fadeIn">
-		Excuse the bugs. The website is currently under construction.
-		<br>
-		Last Updated: {{ site.time | date: '%m.%d.%y' }}
-	    </div>
+	<div class="footer animated fadeIn">
+	    Excuse the bugs. The website is currently under construction.
+	    <br>
+	    Last Updated: {{ site.time | date: '%m.%d.%y' }}
+	</div>
 
     </body>
 

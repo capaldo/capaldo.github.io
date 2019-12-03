@@ -274,13 +274,13 @@ p.shortbio {
     opacity: 100%;
 }
 
-.fa-file {
+.fa-scroll {
     color: var(--yellow);
     opacity: 85%;
     transition: opacity .25s ease-in-out;
 }
 
-.fa-file:hover {
+.fa-scroll:hover {
     opacity: 100%;
 }
 
