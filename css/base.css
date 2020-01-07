@@ -179,17 +179,6 @@
     url("fonts/Pragmata Pro Mono Regular.woff") format("woff");
 }
 
-@font-face {
-    font-family: 'SFPro';
-    font-style: normal;
-    src: url("fonts/SF-Pro-Text-Medium.woff2") format("woff2"),
-    url("fonts/SF-Pro-Text-Medium.woff") format("woff");
-}
-
-.noselect {
-    user-select: none;
-}
-
 body {
     background: var(--bg-color);
     display: grid;
@@ -210,7 +199,7 @@ p.intro {
     font-style: normal;
     font-size: 10px;
     text-align: left;
-    animation-delay: 0s;
+    animation-delay: 0.4s;
     line-height: 0.1em;
 }
 
@@ -220,8 +209,8 @@ h1.name {
     font-weight: 900;
     font-size: 30px;
     text-align: left;
-    animation-delay: 0.8s;
-    line-height: 0.5em;
+    animation-delay: 1.2s;
+    line-height: 0.8em;
 }
 
 p.motto {
@@ -230,7 +219,7 @@ p.motto {
     font-weight: 500;
     font-size: 15px;
     text-align: left;
-    animation-delay: 1.3s;
+    animation-delay: 1.6s;
 }
 
 p.shortbio {
@@ -239,9 +228,8 @@ p.shortbio {
     font-style: normal;
     font-size: 13px;
     text-align: justify;
-    animation-delay: 2.0s;
+    animation-delay: 2.2s;
 }
-
 
 .icons {
     display: flex;
