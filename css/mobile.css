@@ -6,7 +6,8 @@
   }
   
   .homeText { 
-      width: 95vw;
+      width: 90vw;
+      height: 10vh;
   }
 
   p.intro {
@@ -18,11 +19,20 @@
   }
 
   p.motto {
-      font-size: 22px;
+      font-size: 20px;
   }
 
   p.shortbio {
-      font-size: 20px;
+      font-size: 18px;
+  }
+
+  .icons {
+      visibility: hidden;
+      display: none;
+  }
+
+  .footer {
+      animation-delay: 2.6s;
   }
 
 }
