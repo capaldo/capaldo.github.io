@@ -1,4 +1,13 @@
 @media only screen and (min-width: 840px) {
+  body, html {
+     overflow: hidden;
+     position: relative;
+     height: 100%;
+  }
+  .homeText { 
+     width: 90vw;
+     height: 10vh;
+  }
   p.intro {
     font-size: 30px;
   }
