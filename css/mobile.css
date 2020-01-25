@@ -4,35 +4,27 @@
        position: relative;
        height: 100%;
   }
-  
   .homeText { 
       width: 90vw;
       height: 10vh;
   }
-
   p.intro {
       font-size: 15px;
   }
-
   h1.name {
       font-size: 35px;
   }
-
   p.motto {
       font-size: 20px;
   }
-
   p.shortbio {
       font-size: 18px;
   }
-
   .icons {
       visibility: hidden;
       display: none;
   }
-
   .footer {
       animation-delay: 2.6s;
   }
-
 }
