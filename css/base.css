@@ -241,7 +241,6 @@ p.shortbio {
     font-size: 30px;
 }
 
-
 .github, .keybase {
     animation-delay: 2.8s;
     animation-duration: 0.5s;
@@ -294,6 +293,7 @@ p.shortbio {
 
 .footer {
     align-items: center bottom;
+    position:
     width: 100%;
     color: var(--footer-color);
     font-family: PPro;
