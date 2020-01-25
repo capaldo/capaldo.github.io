@@ -1,4 +1,4 @@
-@media only screen and (min-width: 840px) {
+@media only screen and (max-width: 840px) {
   body, html {
      overflow: hidden;
      position: relative;
