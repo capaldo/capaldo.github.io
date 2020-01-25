@@ -1,20 +1,20 @@
 @media only screen and (min-width: 840px) {
   p.intro {
-    font-size: 20px;
+    font-size: 30px;
   }
   h1.name {
-   font-size: 55px;
+   font-size: 65px;
   }
   p.motto { 
-    font-size: 25px;
+    font-size: 35px;
   }
   p.shortbio {
-   font-size: 20px;
+   font-size: 30px;
   }
   .fab, .far, .fas {
-   font-size: 25px;
+   font-size: 35px;
   }
   .footer {
-   font-size: 15px;
+   font-size: 20px;
   }
 }
