@@ -16,17 +16,18 @@
 .preload {
     height: 100%;
     width: 100%;
-    margin: auto;
     animation-delay: 3s;
+
 }
 
 .staff {
-    position: relative;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 17.65px;
     height: 160px;
-    margin: auto;
-    transform: translate(-0%, 80%) rotate(0deg);
-    transform-origin: 0% 0%;
     z-index: 0;
 }
 
@@ -35,12 +36,13 @@
 }
 
 .snake {
-    position: relative;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-54%, -50%);
+
     width: 100px;
     height: 108.82px;
-    margin: auto;
-    transform: translate(-4%, -0%) rotate(0deg);
-    transform-origin: 0% 0%;
     z-index: 1;
     animation-delay: 1s;
 }
@@ -50,12 +52,13 @@
 }
 
 .brackets {
-    position: relative;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 298px;
     height: 105px;
-    margin: auto;
-    transform: translate(-0%, -100%) rotate(0deg);
-    transform-origin: 0% 0%;
     z-index: 2;
     animation-delay: 2s;
 }
