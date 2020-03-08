@@ -11,8 +11,8 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--name-color);
+    background-color: var(--bg-color);
+    color: var(--name-color);
 }
 
 .container {
