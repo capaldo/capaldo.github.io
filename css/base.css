@@ -1,14 +1,13 @@
 :root {
-  --bg-color: #1C1C1E;
-  --intro-color: #636366;
-  --name-color: #FFFFFF;
-  --motto-color: #636366;
-  --shortbio-color: #8E8E93;
-  --footer-color: #48484A;
-  --red: #FF453A;
-  --yellow: #FFD60A;
-  --green: #30D158;
-  --blue: #0A84FF;
+    --bg-color: #1C1C1E;
+    --name-color: #FFFFFF;
+    --grey1: #48484A;
+    --grey2: #8E8E93;
+    --grey3: #636366;
+    --red: #FF453A;
+    --yellow: #FFD60A;
+    --green: #30D158;
+    --blue: #0A84FF;
 }
 
 body {
