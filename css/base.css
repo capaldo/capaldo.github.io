@@ -40,3 +40,15 @@ body {
 .footer {
   grid-area: footer;
 }
+
+.brackets {
+    fill: var(--grey3);
+}
+
+.staff {
+    fill: var(--grey2);
+}
+
+.snake {
+    fill: var(--grey1);
+}
