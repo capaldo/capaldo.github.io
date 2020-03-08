@@ -16,29 +16,30 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 4fr 1fr;
-  grid-template-areas: 
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
     ". header ."
     ". main ."
     ". footer .";
-  height: 95vh;
-  width: 95vw;
-  margin: 0 auto;
-  place-items: stretch;
+    height: 95vh;
+    width: 95vw;
+    margin: 0 auto;
+    place-items: stretch;
 }
 
 .header {
-  grid-area: header;
+    grid-area: header;
 }
 
 .main {
-  grid-area: main;
+    grid-area: main;
 }
 
 .footer {
-  grid-area: footer;
+    grid-area: footer;
+}
 
 .icon {
     position: absolute;
