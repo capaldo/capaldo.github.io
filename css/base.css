@@ -36,7 +36,7 @@
 
 body {
     background-color: var(--bg-color);
-    color: var(--name-color);
+    color: var(--white);
 }
 
 .container {
@@ -79,9 +79,9 @@ body {
 }
 
 .staff {
-    fill: var(--grey2);
+    fill: var(--grey1);
 }
 
 .snake {
-    fill: var(--grey1);
+    fill: var(--white);
 }
