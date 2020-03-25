@@ -1,11 +1,12 @@
 :root {
     --bg-color: #1C1C1E;
-    --name-color: #FFFFFF;
+    --white: #FFFFFF;
     --grey1: #48484A;
-    --grey2: #8E8E93;
-    --grey3: #636366;
+    --grey2: #636366;
+    --grey3: #8E8E93;
     --red: #FF453A;
     --yellow: #FFD60A;
+    --orange: #FF9F0A;
     --green: #30D158;
     --blue: #0A84FF;
 }
