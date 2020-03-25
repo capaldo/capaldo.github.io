@@ -68,20 +68,32 @@ body {
 .icon {
     position: absolute;
     margin: auto;
+    top: 0;
+    bottom: 15%;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 5%;
+    animation: zoomOut 0.2s linear forwards;
+    animation-delay: 2.4s;
 }
 
 .brackets {
     fill: var(--grey3);
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: 0.8s;
 }
 
 .staff {
     fill: var(--grey1);
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: 0.1s;
 }
 
 .snake {
     fill: var(--white);
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: 0.5s;
 }
+
