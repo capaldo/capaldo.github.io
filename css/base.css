@@ -103,24 +103,35 @@ body {
     place-self: center;
 }
 
-.brackets {
-    fill: var(--grey3);
-    opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-    animation-delay: 0.8s;
+.icon {
+    animation: zoomOut 0.3s 2.6s linear forwards;
+}
+
+.bracket-left {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dashLeft 1.4s 0.2s linear forwards, bracketFadeIn 0.6s 1.6s ease-in forwards;
+}
+
+.bracket-right {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dashRight 1.4s 1.3s linear forwards, bracketFadeIn 0.6s 1.6s ease-in forwards;
 }
 
 .staff {
     fill: var(--grey1);
     opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-    animation-delay: 0.1s;
+    animation: fadeIn 0.5s 0.2s ease-in forwards;
 }
 
 .snake {
     fill: var(--white);
     opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-    animation-delay: 0.5s;
+    animation: fadeIn 0.5s 0.6s ease-in forwards;
 }
 
+.footer {
+    grid-area: footer;
+    place-self: last baseline center;
+}
