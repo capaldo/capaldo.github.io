@@ -11,13 +11,35 @@
     --blue: #0A84FF;
 }
 
+body {
+    background-color: var(--bg-color);
+    color: var(--white);
+}
+
+@keyframes dashLeft {
+    from {
+	stroke-dashoffset: 1000;
+    }
+    to {
+	stroke-dashoffset: 2000;
+    }
+}
+
+@keyframes dashRight {
+    from {
+	stroke-dashoffset: 1000;
+    }
+    to {
+	stroke-dashoffset: 0;
+    }
+}
+
 @keyframes zoomOut {
     from {
 	opacity: 1;
     }
     50% {
 	opacity: 0;
-	-webkit-transform: scale3d(0.3, 0.3, 0.3);
 	transform: scale3d(0.3, 0.3, 0.3);
     }
     to {
@@ -34,9 +56,13 @@
     }
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--white);
+@keyframes bracketFadeIn {
+    0% {
+	fill: var(--bg-color);
+    }
+    100% {
+	fill: var(--grey2);
+    }
 }
 
 .container {
