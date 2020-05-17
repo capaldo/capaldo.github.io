@@ -67,39 +67,40 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1.0fr 1.0fr 3.0fr 1.0fr;
+    grid-template-rows: 1.0fr 0.5fr 4.0fr 1.0fr 0.5fr;
     grid-template-areas: 
-    ". header ."
-    ". main ."
-    ". footer .";
+    " . . . ."
+    ". headerLeft headerRight ."
+    ". main main ."
+    ". . . ."
+    ". footer footer .";
     height: 95vh;
     width: 95vw;
     margin: 0 auto;
     place-items: stretch;
 }
 
-.header {
-    grid-area: header;
+.headerIcon {
+    grid-area: headerLeft;
+}
+
+.headerMenu {
+    grid-area: headerRight;
+    place-self: center self-end; 
 }
 
 .main {
+    display: grid;
     grid-area: main;
+    place-self: center;
 }
 
-.footer {
-    grid-area: footer;
-}
 
-.icon {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 15%;
-    left: 0;
-    right: 0;
-    animation: zoomOut 0.2s linear forwards;
-    animation-delay: 2.4s;
+.iconContainer {
+    display: grid;
+    grid-area: main;
+    place-self: center;
 }
 
 .brackets {
