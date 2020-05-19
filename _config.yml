@@ -4,7 +4,10 @@ last_name: "Capaldo"
 intro: "Hi, my name is"
 motto: "I like integrating medicine & programming"
 short_bio: "I'm a post-baccalaureate and medical school<br>applicant based in Miami, FL that designs and<br>builds tools for the healthcare space."
+
 email: "alex@capaldo.io"
+github: "capaldo"
+linkedin: "capaldo"
 
 # Where things are
 source              : .
