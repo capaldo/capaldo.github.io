@@ -126,8 +126,20 @@ body {
     animation: fadeIn 0.5s 3.0s ease-in-out forwards; 
 }
 
+.bracketLeftSmall, .bracketRightSmall {
+    fill: var(--grey3);
+}
 
-.iconContainer {
+.staffSmall {
+    fill: var(--grey1);
+}
+
+.snakeSmall {
+    fill: var(--white);
+}
+
+
+.iconLarge {
     display: grid;
     grid-area: main;
     place-self: center;
@@ -135,13 +147,14 @@ body {
     z-index: -1;
 }
 
-.icon {
-    animation: zoomOut 0.3s 2.6s linear forwards;
+.staffLarge {
+    fill: var(--grey1);
     opacity: 0;
     animation: fadeIn 0.2s 0.2s ease-in forwards; 
 }
 
-.bracket-left {
+.snakeLarge {
+    fill: var(--white);
     opacity: 0;
     animation: fadeIn 0.2s 0.4s ease-in forwards;
 }
