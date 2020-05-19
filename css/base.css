@@ -91,33 +91,39 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1.0fr 1.0fr 3.0fr 1.0fr;
-    grid-template-rows: 1.0fr 0.5fr 4.0fr 1.0fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr 2.0fr 2.0fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 1.0fr 4.0fr 1.0fr 0.5fr;
     grid-template-areas: 
-    " . . . ."
-    ". headerLeft headerRight ."
-    ". main main ."
-    ". . . ."
-    ". footer footer .";
-    height: 95vh;
-    width: 95vw;
+    "headerLeft headerLeft . headerRight headerRight ."
+    ". . . . . ."
+    ". . main main . ."
+    ". . . . . ."
+    ". . footer footer . .";
+    height: 90vh;
+    width: 90vw;
     margin: 0 auto;
     place-items: stretch;
-}
-
-.headerIcon {
-    grid-area: headerLeft;
-}
-
-.headerMenu {
-    grid-area: headerRight;
-    place-self: center self-end; 
 }
 
 .main {
     display: grid;
     grid-area: main;
-    place-self: center;
+    place-self: first baseline center;
+}
+
+.headerMenu {
+    display: grid;
+    grid-area: headerRight;
+    place-self: center end;
+    white-space: nowrap;
+}
+
+.iconHeader {
+    display: grid;
+    grid-area: headerLeft;
+    place-self: last baseline start;
+    opacity: 0;
+    animation: fadeIn 0.5s 3.0s ease-in-out forwards; 
 }
 
 
