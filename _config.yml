@@ -8,6 +8,7 @@ short_bio: "I'm a post-baccalaureate and medical school<br>applicant based in Mi
 email: "alex@capaldo.io"
 github: "capaldo"
 linkedin: "capaldo"
+resume: "misc/cv.pdf"
 
 # Where things are
 source              : .
