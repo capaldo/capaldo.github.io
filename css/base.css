@@ -172,19 +172,119 @@ body {
 }
 
     fill: var(--grey1);
+.mainText {
+    line-height: 1.2em;
+}
+
+h3.intro {
+    text-align: left;
     opacity: 0;
-    animation: fadeIn 0.5s 0.2s ease-in forwards;
+    font-family: "SFMono";
+    font-size: 1.4em;
+    font-weight: normal;
+    color: var(--grey2);
+    text-indent: 0.1em;
     animation: fadeInUp 0.5s 3.7s ease-in-out forwards;
 }
 
-.snake {
-    fill: var(--white);
+h1.name {
+    text-align: left;
+    opacity: 0; 
+    font-family: "SFProDisplay";
+    font-size: 4.2em;
+    font-weight: 800;
+    color: var(--white);
+    white-space: nowrap;
     animation: fadeInUp 0.5s 3.8s ease-in-out forwards;
+}
+
+h2.motto {
+    text-align: left;
+    opacity: 0; 
+    font-family: "SFProDisplay";
+    font-size: 2.4em;
+    font-weight: 500;
+    color: var(--grey3);
+    padding-top: 0.2em;
+    white-space: nowrap;
     animation: fadeInUp 0.5s 3.9s ease-in-out forwards;
+}
+
+h6.shortBio {
+    text-align: left;
+    opacity: 0; 
+    font-family: "SFProText";
+    font-size: 1.4em;
+    font-weight: 300;
+    color: var(--grey3);
+    line-height: 1.1em;
     animation: fadeInUp 0.5s 4.0s ease-in-out forwards;
+}
+
+a.redNav {
+    opacity: 0;
+    font-family: "SFMono";
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--white);
     animation: fadeInDown 0.5s 3.0s ease-in-out forwards;
+    text-decoration: none; 
+    white-space: nowrap;
+    padding-right: 2.4em;
+    transition: 0.3s;
+}
+
+p.redNav {
+    display: inline;
+    color: var(--red);
+}
+
+a.redNav:hover {
+    color: var(--red);
+}
+
+a.blueNav {
+    opacity: 0;
+    font-family: "SFMono";
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--white);
     animation: fadeInDown 0.5s 3.1s ease-in-out forwards;
+    text-decoration: none; 
+    white-space: nowrap;
+    padding-right: 2.4em;
+    transition: 0.3s;
+}
+
+p.blueNav {
+    display: inline;
+    color: var(--blue);
+}
+
+a.blueNav:hover {
+    color: var(--blue);
+}
+
+a.yellowNav {
+    opacity: 0;
+    font-family: "SFMono";
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--white);
     animation: fadeInDown 0.5s 3.2s ease-in-out forwards;
+    text-decoration: none; 
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+p.yellowNav {
+    display: inline;
+    color: var(--yellow);
+}
+
+a.yellowNav:hover {
+    color: var(--yellow);
+}
     opacity: 0;
     animation: fadeInUp 0.5s 4.1s ease-in-out forwards;
 }
