@@ -285,8 +285,28 @@ p.yellowNav {
 a.yellowNav:hover {
     color: var(--yellow);
 }
+
+.btnWrap {
+    display: inline;
+}
+
+a.btnEmail {
+    display: inline-block;
     opacity: 0;
+    padding: 15px 20px;
+    font-family: "SFMono";
+    font-size: 1.0em;
+    font-weight: 200;
+    color: var(--white);
+    text-decoration: none; 
+    border: 0.1em solid var(--white);
+    border-radius: 0.4em;
     animation: fadeInUp 0.5s 4.1s ease-in-out forwards;
+    transition: 0.3s;
+}
+
+a.btnEmail:hover {
+    background-color: var(--grey1);
 }
 
 .footer {
