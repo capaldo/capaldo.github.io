@@ -14,8 +14,6 @@
 body {
     background-color: var(--bg-color);
     color: var(--white);
-    max-width: 70vw;
-    max-height: 70vh;
 }
 
 @keyframes dashLeft {
@@ -104,8 +102,14 @@ body {
     "footer footer footer";
     margin: 0 auto;
     place-items: stretch;
-    max-width: 70vw;
-    max-height: 70vh;
+    grid-gap: 30px;
+    height: 80vh;
+    width: 80vw;
+}
+
+svg.iconSmall {
+    min-width: 250px;
+    min-height: 100px;
 }
 
 @media screen and (max-width: 800px) {
@@ -127,7 +131,6 @@ body {
 	grid-gap: 60px;
     }
     .headerMenu {
-	place-self: center !important;
     }
     .iconHeader {
 	place-self: center;
@@ -135,6 +138,7 @@ body {
     svg.iconSmall {
 	width: 450px;
 	height: 150px;
+    }
 }
 
 .main {
