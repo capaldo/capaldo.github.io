@@ -93,18 +93,18 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 2.0fr 2.0fr 0.5fr 0.5fr;
-    grid-template-rows: 0.5fr 1.0fr 4.0fr 1.0fr 0.5fr;
+    grid-template-columns: 0.6fr 2.0fr 1.0fr;
+    grid-template-rows: 0.2fr 0.4fr 4.0fr 0.4fr 0.2fr;
     grid-template-areas: 
-    "headerLeft headerLeft . headerRight headerRight ."
-    ". . . . . ."
-    ". . main main . ."
-    ". . . . . ."
-    ". . footer footer . .";
-    height: 90vh;
-    width: 90vw;
+    "headerLeft . headerRight"
+    ". . ."
+    "main main main"
+    ". . ."
+    "footer footer footer";
     margin: 0 auto;
     place-items: stretch;
+    max-width: 70vw;
+    max-height: 70vh;
 }
 
 .main {
