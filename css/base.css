@@ -11,11 +11,6 @@
     --blue: #0A84FF;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--white);
-}
-
 @keyframes dashLeft {
     from {
 	stroke-dashoffset: 1000;
@@ -52,7 +47,7 @@ body {
 	opacity: 0;
     }
     100% {
-	opacity: 1; 
+	opacity: 1;
     }
 }
 
@@ -89,72 +84,34 @@ body {
     }
 }
 
-
-.container {
+body { 
     display: grid;
-    grid-template-columns: 0.6fr 2.0fr 1.0fr;
-    grid-template-rows: 0.2fr 0.4fr 4.0fr 0.4fr 0.2fr;
-    grid-template-areas: 
-    "headerLeft . headerRight"
-    ". . ."
-    "main main main"
-    ". . ."
-    "footer footer footer";
-    margin: 0 auto;
-    place-items: stretch;
-}
-
-svg.iconSmall {
-    min-width: 250px;
-    min-height: 100px;
-}
-
-@media screen and (max-width: 800px) {
-    body {
-	overflow: hidden;
-    }
-    .container { 
-	display: grid;
-	grid-template-columns: 1.0fr 1.0fr 1.0fr;
-	grid-template-rows: 0.2fr 0.2fr 4.0fr 0.2fr 0.2fr;
-	grid-template-areas:
-	"headerLeft headerLeft headerLeft"
-	"headerRight headerRight headerRight"
-	"main main main"
-	". . ."
-	"footer footer footer";
-	margin: 0 auto;
-	grid-gap: 80px;
-    }
-    .headerMenu {
-	place-self: center !important;
-    }
-    .iconHeader {
-	place-self: center;
-    }
-    svg.iconSmall {
-	width: 450px;
-	height: 150px;
-    }
-}
-
-.main {
-    display: grid;
-    grid-area: main;
-    place-self: first baseline center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 1.0fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas:
+    ". . . . ."
+    ". headerLeft . headerRight ."
+    ". . . . ."
+    ". main main main ."
+    ". . . . ."
+    ". footer footer footer ."
+    ". . . . .";
+    height: 95vh;
+    background-color: var(--bg-color);
+    color: var(--white);
 }
 
 .headerMenu {
-    display: inline-block;
     grid-area: headerRight;
-    place-self: center end;
-    white-space: nowrap;
+    white-space: nowrap !important;
+    place-self: center;
 }
 
 .iconHeader {
     grid-area: headerLeft;
+    place-self: center;
     opacity: 0;
-    animation: fadeIn 0.5s 3.0s ease-in-out forwards; 
+    animation: fadeIn 0.5s 3.0s ease-in-out forwards;
 }
 
 .bracketLeftSmall, .bracketRightSmall {
@@ -169,74 +126,47 @@ svg.iconSmall {
     fill: var(--white);
 }
 
-
-.iconLarge {
-    display: grid;
+.main {
     grid-area: main;
     place-self: center;
-    animation: zoomOut 0.4s 2.2s linear forwards;
-    z-index: -1;
-}
-
-.staffLarge {
-    fill: var(--grey1);
-    opacity: 0;
-    animation: fadeIn 0.2s 0.2s ease-in forwards; 
-}
-
-.snakeLarge {
-    fill: var(--white);
-    opacity: 0;
-    animation: fadeIn 0.2s 0.4s ease-in forwards;
-}
-
-.bracketLeftLarge {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dashLeft 0.5s 0.4s linear forwards, bracketFadeIn 0.4s 1.1s ease-in forwards; 
-}
-
-.bracketRightLarge {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dashRight 0.5s 0.8s linear forwards, bracketFadeIn 0.4s 1.1s ease-in forwards; 
+    margin-bottom: 30%;
 }
 
 .mainText {
-    line-height: 1.2em;
+    line-height: 1.0em;
+    margin-left: 12%;
+    max-width: 80%;
+}
+
+h1.name {
+    opacity: 0;
+    text-align: left;
+    font-family: "SFProDisplay";
+    font-size: 4.2em;
+    font-weight: 800;
+    color: var(--white);
+    animation: fadeInUp 0.5s 3.6s ease-in-out forwards;
 }
 
 h3.intro {
     opacity: 0;
     text-align: left;
     font-family: "SFMono";
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: normal;
     color: var(--grey2);
     text-indent: 0.1em;
     animation: fadeInUp 0.5s 3.5s ease-in-out forwards;
 }
 
-h1.name {
-    opacity: 0; 
-    text-align: left;
-    font-family: "SFProDisplay";
-    font-size: 4.2em;
-    font-weight: 800;
-    color: var(--white);
-    white-space: nowrap;
-    animation: fadeInUp 0.5s 3.6s ease-in-out forwards;
-}
-
 h2.motto {
-    opacity: 0; 
+    opacity: 0;
     text-align: left;
     font-family: "SFProDisplay";
-    font-size: 2.4em;
+    font-size: 2.2em;
     font-weight: 500;
     color: var(--grey3);
     padding-top: 0.2em;
-    white-space: nowrap;
     animation: fadeInUp 0.5s 3.7s ease-in-out forwards;
 }
 
@@ -251,6 +181,21 @@ h6.shortBio {
     animation: fadeInUp 0.5s 3.8s ease-in-out forwards;
 }
 
+.footer {
+    grid-area: footer;
+    place-self: center;
+    text-align: center;
+    font-family: "SFMono";
+    opacity: 0;
+    font-size: 0.8em;
+    color: var(--grey1);
+    animation: fadeIn 0.5s 4.0s ease-in-out forwards;
+}
+
+p.redNav, p.blueNav, p.yellowNav {
+    display: inline-block;
+}
+
 a.redNav {
     opacity: 0;
     font-family: "SFMono";
@@ -258,9 +203,9 @@ a.redNav {
     font-weight: 400;
     color: var(--white);
     animation: fadeInDown 0.5s 3.0s ease-in-out forwards;
-    text-decoration: none; 
-    padding-right: 2.4em;
+    text-decoration: none;
     transition: 0.3s;
+    padding-right: 2.0em;
 }
 
 p.redNav {
@@ -279,9 +224,9 @@ a.blueNav {
     font-weight: 400;
     color: var(--white);
     animation: fadeInDown 0.5s 3.1s ease-in-out forwards;
-    text-decoration: none; 
-    padding-right: 2.4em;
+    text-decoration: none;
     transition: 0.3s;
+    padding-right: 2.0em;
 }
 
 p.blueNav {
@@ -300,13 +245,11 @@ a.yellowNav {
     font-weight: 400;
     color: var(--white);
     animation: fadeInDown 0.5s 3.2s ease-in-out forwards;
-    text-decoration: none; 
-    padding-right: 2.4em;
+    text-decoration: none;
     transition: 0.3s;
 }
 
 p.yellowNav {
-    display: inline;
     color: var(--yellow);
 }
 
@@ -319,14 +262,14 @@ a.yellowNav:hover {
 }
 
 a.btnEmail {
-    display: inline-block;
+    display: inline;
     opacity: 0;
-    padding: 15px 20px;
+    padding: 10px 20px;
     font-family: "SFMono";
     font-size: 1.0em;
     font-weight: 200;
     color: var(--white);
-    text-decoration: none; 
+    text-decoration: none;
     border: 0.1em solid var(--white);
     border-radius: 0.4em;
     animation: fadeInUp 0.5s 3.9s ease-in-out forwards;
@@ -337,13 +280,93 @@ a.btnEmail:hover {
     background-color: var(--grey1);
 }
 
-.footer {
-    grid-area: footer;
-    place-self: last baseline center;
-    text-align: center;
-    font-family: "SFMono";
-    opacity: 0;
-    font-size: 0.8em;
-    color: var(--grey1);
-    animation: fadeIn 0.5s 4.0s ease-in-out forwards;
+.iconCenter {
+    grid-area: main;
+    place-self: center;
 }
+
+svg.iconLarge {
+    width: 100%;
+    height: auto;
+    animation: zoomOut 0.4s 2.2s linear forwards;
+    z-index: -1;
+}
+
+.staffLarge {
+    fill: var(--grey1);
+    opacity: 0;
+    animation: fadeIn 0.2s 0.2s ease-in forwards;
+}
+
+.snakeLarge {
+    fill: var(--white);
+    opacity: 0;
+    animation: fadeIn 0.2s 0.4s ease-in forwards;
+}
+
+.bracketLeftLarge {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dashLeft 0.5s 0.4s linear forwards, bracketFadeIn 0.4s 1.1s ease-in forwards;
+}
+
+.bracketRightLarge {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dashRight 0.5s 0.8s linear forwards, bracketFadeIn 0.4s 1.1s ease-in forwards;
+}
+
+svg.iconSmall {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    body { 
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.1fr 0.1fr 0.6fr 0.4fr 0.1fr;
+	grid-template-areas:
+	"headerLeft"
+	"headerRight"
+	"main" 
+	" . "
+	"footer";
+	max-height: 95vh;
+    }
+
+    .main {
+	margin-bottom: 15%;
+	margin-top: 10%;
+    }
+
+    svg.iconSmall {
+	max-height: 100px;
+    }
+
+    a.redNav, a.blueNav {
+	padding-right: 2em;
+    }
+
+    a.redNav, a.blueNav, a.yellowNav, a.btnEmail {
+	font-size: 0.8em;
+    }
+
+    h1.name {
+	font-size: 2.2em;
+    }
+
+    h2.motto {
+	font-size: 1.2em;
+    }
+
+    h6.shortBio {
+	font-size: 0.9em;
+    }
+
+    .footer {
+	font-size: 0.5em;
+    }
+
+}
+

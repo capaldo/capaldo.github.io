@@ -2,7 +2,8 @@
 <html>
     <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+
 	<link rel="preload" href="css/fonts.css" as="style">
 	<link rel="preload" href="css/base.css" as="style">
 
@@ -13,27 +14,27 @@
 
     <body>
 
-	<div class="container">
 
-	    <div class="headerMenu">
-		{% include header.html %}
-	    </div>
-
-	    <div class="iconHeader">
-		{% include svgSmall.html %}
-	    </div>
-
-	    <div class="iconLarge">
-		{% include svgLarge.html %}
-	    </div>
-
-	    <div class="main">
-		{% include mainBody.html %}
-		{% include mainButton.html %}
-	    </div>
-
-
-	    {% include footer.html %}
+	<div class="headerMenu">
+	    {% include header.html %}
 	</div>
+
+	<div class="iconHeader">
+	    {% include svgSmall.html %}
+	</div>
+
+	<div class="iconCenter">
+	    {% include svgLarge.html %}
+	</div>
+
+	<div class="main">
+	    <div class="mainText">
+	    {% include mainBody.html %}
+	    {% include mainButton.html %}
+	    </div>
+	</div>
+
+
+	{% include footer.html %}
     </body>
 </html>
