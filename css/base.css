@@ -334,6 +334,7 @@ svg.iconSmall {
 	"footer";
 	max-height: 95vh;
 	overflow: hidden;
+	touch-action: none;
     }
 
     .main {
@@ -356,7 +357,7 @@ svg.iconSmall {
     h3.intro {
 	font-size: 0.8em;
     }
-    
+
     h1.name {
 	font-size: 2.4em;
     }
