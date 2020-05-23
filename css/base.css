@@ -333,6 +333,7 @@ svg.iconSmall {
 	" . "
 	"footer";
 	max-height: 95vh;
+	overflow: hidden;
     }
 
     .main {
