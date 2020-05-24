@@ -108,10 +108,15 @@ body {
 }
 
 .iconHeader {
+    opacity: 0;
     grid-area: headerLeft;
     place-self: center;
-    opacity: 0;
     animation: fadeIn 0.5s 3.0s ease-in-out forwards;
+}
+
+svg.iconSmall {
+    width: 250px;
+    height: auto;
 }
 
 .bracketLeftSmall, .bracketRightSmall {
@@ -182,11 +187,11 @@ h6.shortBio {
 }
 
 .footer {
+    opacity: 0;
     grid-area: footer;
     place-self: center;
     text-align: center;
     font-family: "SFMono";
-    opacity: 0;
     font-size: 0.8em;
     color: var(--grey1);
     animation: fadeIn 0.5s 4.0s ease-in-out forwards;
@@ -262,8 +267,8 @@ a.yellowNav:hover {
 }
 
 a.btnEmail {
-    display: inline;
     opacity: 0;
+    display: inline;
     padding: 10px 20px;
     font-family: "SFMono";
     font-size: 1.0em;
@@ -272,7 +277,7 @@ a.btnEmail {
     text-decoration: none;
     border: 0.1em solid var(--white);
     border-radius: 0.4em;
-    animation: fadeInUp 0.5s 3.9s ease-in-out forwards;
+    animation: fadeInUp 0.5s 4.0s ease-in-out forwards;
     transition: 0.3s;
 }
 
@@ -286,21 +291,21 @@ a.btnEmail:hover {
 }
 
 svg.iconLarge {
-    width: 100%;
+    width: 500px;
     height: auto;
-    animation: zoomOut 0.4s 2.2s linear forwards;
+    animation: zoomOut 0.4s 2.0s linear forwards;
     z-index: -1;
 }
 
 .staffLarge {
-    fill: var(--grey1);
     opacity: 0;
+    fill: var(--grey1);
     animation: fadeIn 0.2s 0.2s ease-in forwards;
 }
 
 .snakeLarge {
-    fill: var(--white);
     opacity: 0;
+    fill: var(--white);
     animation: fadeIn 0.2s 0.4s ease-in forwards;
 }
 
@@ -314,11 +319,6 @@ svg.iconLarge {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: dashRight 0.5s 0.8s linear forwards, bracketFadeIn 0.4s 1.1s ease-in forwards;
-}
-
-svg.iconSmall {
-    width: 100%;
-    height: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -344,6 +344,11 @@ svg.iconSmall {
 
     svg.iconSmall {
 	max-height: 100px;
+    }
+
+    svg.iconLarge {
+	width: 100%;
+	height: auto;
     }
 
     a.redNav, a.blueNav {
@@ -373,6 +378,4 @@ svg.iconSmall {
     .footer {
 	font-size: 0.5em;
     }
-
 }
-
