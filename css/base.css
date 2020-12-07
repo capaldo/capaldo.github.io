@@ -188,6 +188,7 @@ h6.shortBio {
     margin-top: 1.8em;
     margin-bottom: 3.0em;
     animation: fadeInUp 0.5s 3.8s ease-in-out forwards;
+    white-space: nowrap;
 }
 
 .footer {
